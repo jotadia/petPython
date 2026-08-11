@@ -1,3 +1,11 @@
+# -*- coding: utf-8 -*-
+"""
+Created on 10 aug 2026
+
+@author: JCOD
+"""
+
+
 class Mascota:
     def __init__(self, nombre, edad, especie, adoptado=False):
         self.nombre = nombre

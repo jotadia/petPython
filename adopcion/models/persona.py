@@ -5,7 +5,7 @@ Created on 10 aug 2026
 @author: JCOD
 """
 
-import mascota as m
+from .mascota import *
 
 class Persona:
     def __init__(self, nombre, edad):
@@ -16,14 +16,14 @@ class Persona:
         return f"Hola, mi nombre es {self.nombre} y tengo {self.edad} años."  
 
     def __str__(self):
-        return f"{self.nombre} ({self.edad} años)"
+        return f"{self.nombre} ({self.edad} añitos)"
     
 class Adoptante(Persona):
     
-    mascotas_adoptadas = []
+    mascotas_adoptadas: list[object] = []
     
-    def adoptar(self, mascota):
-        self.mascotas_adoptadas.append(mascota)
+    def adoptar(self, Mascota):
+        self.mascotas_adoptadas.append(Mascota)
     
     def __init__(self, nombre, edad, direccion):
         super().__init__(nombre, edad)

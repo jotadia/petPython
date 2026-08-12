@@ -5,7 +5,7 @@ Created on 10 aug 2026
 @author: JCOD
 """
 
-from .mascota import *
+#from .mascota import *
 
 class Persona:
     def __init__(self, nombre, edad):
